@@ -10,8 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <main>
+    <body data-barba="wrapper">
+
+        <main data-barba="container" data-barba-namespace="home">
             <div class="banner">
                 <div class="bannerHeader">Nikhil Shetty</div>
                 <nav>
@@ -26,10 +27,13 @@
                     <p id="homeBoxContent">Hello. Welcome to my personal website. Here, you can find a page for my portfolio (I don't have one yet), a work in progress video game and my upcoming music project. Any and all assets you find on this website (such as music and images) are created by me.</p>
                 </div>
             </div>
-            <footer>
-                <p>© Created by Nikhil Shetty 2024</p>
-            </footer>
         </main>
+
+        <footer>
+            <p>© Created by Nikhil Shetty 2024</p>
+        </footer>
+
         <script src="./js/main.js"></script>
+        <script src="./node_modules/barba.js/dist/barba.min.js"></script>
     </body>
 </html>
